@@ -16,16 +16,34 @@ body {
     
 }
 
-@media (max-width: 670px) {
+/* inicio mobile */
+@media (max-width: 900px) {
     body {
         max-width: 95%;
     }
 
+.perfil-container  h2, h3 {
+    text-align: center;
+}
+
+.perfil-container p {
+    text-align: center;
+
+}
+/*
     .conteudo-principal {
         margin-left: -50px;
         text-align: center;
     }
-}
+*/
+    .web {
+        display: none;
+    }
+
+
+    
+} 
+/* fim mobile*/
 
 a {
     color: #E5EFC1;
@@ -50,6 +68,7 @@ table {
     width: 95%;
     
 }
+
 
 /* header */
 .menu {
@@ -121,6 +140,7 @@ nav a:hover {
 }
 
 .conteudo-perfil .oi {
+    font-size: 18px;
     color: #22515A;
 }
 
