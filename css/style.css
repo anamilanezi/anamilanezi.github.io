@@ -18,33 +18,67 @@ body {
 
 /* inicio mobile */
 @media (max-width: 900px) {
+    
     body {
         max-width: 95%;
     }
-
-.perfil-container  h2, h3 {
-    text-align: center;
-}
-
-.perfil-container p {
-    text-align: center;
-
-}
-/*
-    .conteudo-principal {
-        margin-left: -50px;
-        text-align: center;
-    }
-*/
     .web {
         display: none;
     }
+    .perfil-container  h2, h3 {
+        text-align: center;
+    }
+
+    .perfil-container p {
+        text-align: center;
+    }
+
+    p {
+        margin: 0; 
+    }
+
+    h4 {
+        margin: 20px 0 0 0;
+        font-size: 20px;
+        color:#E5EFC1;
+        text-transform: uppercase;
+    }
+
+    .descricao {
+        color: #FFFFFF;
+        font-size: 14px;
+        padding-left: 15%;    
+    }
+
+    hr {
+        max-width: 95%;
+        border: 1px solid #E5EFC1;
+        }
+
+    .titulo, .descricao {
+        text-align: left;
+    }
+
+    .curso-ano {
+        text-decoration: underline;
+    }
+
+
 
 
     
 } 
 /* fim mobile*/
 
+/* só web */
+@media (min-width: 900px) {
+    .mobile {
+        display: none;
+    }
+}
+/* fim web */
+
+/* comuns */
 a {
     color: #E5EFC1;
     text-decoration: none;
