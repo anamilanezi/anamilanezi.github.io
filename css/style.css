@@ -31,17 +31,20 @@ body {
 
     .perfil-container p {
         text-align: center;
+        font-size: 12px;
     }
 
     p {
         margin: 0; 
     }
 
-    h3, #nav-formacao, h4 {
+    h3 #curriculo {
         text-align: left;
+        font-size: 20px;
     }
 
     h4 {
+        text-align: left;
         margin: 20px 0 0 0;
         font-size: 18px;
         color:#E5EFC1;
@@ -87,9 +90,10 @@ body {
         border: 1px;
     }
 
-    #botao-enviar {
-
+    .rodape h3 {
+        font-size: 18px;
     }
+
 } 
 /* fim mobile*/
 
@@ -335,6 +339,10 @@ footer {
     margin: 1rem;
     padding: 20px;
     text-align: center;
+}
+
+.rodape {
+    color:#FFFFFF;
 }
 
 
