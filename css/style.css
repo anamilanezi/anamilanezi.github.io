@@ -20,7 +20,7 @@ body {
 @media (max-width: 900px) {
     
     body {
-        max-width: 95%;
+        max-width: 90%;
     }
     .web {
         display: none;
@@ -37,17 +37,27 @@ body {
         margin: 0; 
     }
 
+    h3, #nav-formacao, h4 {
+        text-align: left;
+    }
+
     h4 {
         margin: 20px 0 0 0;
-        font-size: 20px;
+        font-size: 18px;
         color:#E5EFC1;
         text-transform: uppercase;
+        text-decoration: underline;
     }
 
     .descricao {
         color: #FFFFFF;
-        font-size: 14px;
-        padding-left: 15%;    
+        font-size: 12px;
+        padding-left: 10px;    
+    }
+    
+    li {
+        margin: 0;
+        font-size: 12px;
     }
 
     hr {
@@ -55,12 +65,16 @@ body {
         border: 1px solid #E5EFC1;
         }
 
-    .titulo, .descricao {
+    .formacao .titulo, .descricao {
         text-align: left;
     }
 
     .curso-ano {
         text-decoration: underline;
+    }
+
+    ol {
+        margin: 5px;
     }
 
 
