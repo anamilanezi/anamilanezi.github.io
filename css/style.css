@@ -77,10 +77,19 @@ body {
         margin: 5px;
     }
 
+    .link-projetos img {
+        max-width: 80%;
+    }
 
+    .projetos li {
+        display: inline;
+        width: 30%;
+        border: 1px;
+    }
 
+    #botao-enviar {
 
-    
+    }
 } 
 /* fim mobile*/
 
@@ -88,6 +97,16 @@ body {
 @media (min-width: 900px) {
     .mobile {
         display: none;
+    }
+
+    .projetos li {
+        display: inline-block;
+        width: 30%;
+        border: 1px;
+    }
+
+    #botao-enviar {
+        width: 30%;
     }
 }
 /* fim web */
@@ -295,11 +314,7 @@ nav a:hover {
     border-color: #E5EFC1;
 }
 
-.projetos li {
-    display: inline-block;
-    width: 30%;
-    border: 1px;
-}
+
 
 .img-projetos {
     max-width: 200px;
@@ -354,7 +369,6 @@ input, textarea {
 #botao-enviar {
     cursor: pointer;
     float: right;
-    width: 30%;
     color: #557B83;
     font-weight: bold;
     text-transform: uppercase;
