@@ -76,21 +76,36 @@ body {
         text-decoration: underline;
     }
 
+    ul {
+        padding: 0;
+        text-align: center;
+    }
+
     ol {
         margin: 5px;
     }
 
     .link-projetos img {
-        max-width: 80%;
+        max-width: 150px;
     }
 
     .projetos li {
-        display: inline;
+        /*display: inline;*/
         width: 30%;
         border: 1px;
+        list-style: none;
+        margin:auto;
     }
 
     .rodape h3 {
+        font-size: 18px;
+    }
+
+    nav li {
+        list-style: none;
+        margin: auto;
+        text-transform: uppercase;
+        font-weight: bold;
         font-size: 18px;
     }
 
@@ -111,6 +126,15 @@ body {
 
     #botao-enviar {
         width: 30%;
+    }
+
+
+    nav li {
+        display: inline;
+        margin: auto;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
     }
 }
 /* fim web */
@@ -140,7 +164,6 @@ table {
     
 }
 
-
 /* header */
 .menu {
     margin: 1em 1em 0 1em;
@@ -148,18 +171,15 @@ table {
     padding: 10px;
     color: #E5EFC1;
 }
-
+/*
 nav li {
-    
     display: inline;
     margin: auto;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
-
 }
-
-
+*/
 
 nav a:hover {
     background: #A2D5AB;
