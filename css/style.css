@@ -11,8 +11,10 @@ body {
     max-width: 60%;
     text-align: center;
     margin: auto;
-    /*margin: auto;*/
     font-family: 'Overpass Mono', monospace;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     
 }
 
@@ -62,11 +64,6 @@ body {
         margin: 0;
         font-size: 12px;
     }
-
-    hr {
-        max-width: 95%;
-        border: 1px solid #E5EFC1;
-        }
 
     .formacao .titulo, .descricao {
         text-align: left;
@@ -333,9 +330,11 @@ nav a:hover {
     color: #E5EFC1
 }
 
-.projetos hr {
+hr {
     width: 95%;
-    border-color: #E5EFC1;
+    border-style: none;
+    height: 2px;
+    background-color: #E5EFC1;
 }
 
 
