@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,700;0,900;1,200&family=Roboto+Mono:wght@400;700&display=swap');
+
+:root {
+    /* CSS HEX */
+    --rosy-brown: #B08580ff;
+    --rose-taupe: #9A6768ff;
+    --chocolate-cosmos: #4F1D2Cff;
+    --rose-taupe-2: #895559ff;
+    --desert-sand: #D9B59Cff;
+    --dark-purple: #34091Aff;
+
+    --black-olive: hsla(102, 15%, 23%, 1);
+    --moss-green: hsla(85, 14%, 55%, 1);
+    --sage: hsla(74, 21%, 64%, 1);
+    --sage-2: hsla(60, 27%, 69%, 1);
+    --eerie-black: hsla(0, 0%, 10%, 1);
+    --lemon-chiffon: hsla(53, 96%, 89%, 1);
+    --black-olive-2: hsla(115, 12%, 19%, 1);
+    --reseda-green: hsla(92, 15%, 39%, 1);
+       
+    
+    
+    
+}
+
