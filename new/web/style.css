@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,700;0,900;1,200&family=Roboto+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;0,400;0,500;0,700;0,900;1,200&family=Roboto+Mono:wght@200;400;700&display=swap');
 
 
 :root { 
@@ -22,12 +22,18 @@ body {
     font-family: var(--content-font)
 }
 
-h1 {
+h1, h2 {
     font-family: var(--title-font);
     font-weight: 900;
 }
 
+h3 {
+    font-family: var(--title-font);
+}
 
+hr {
+    margin-bottom: 1rem;
+}
 
 
 /* Bootstrap and custom container  */
@@ -44,8 +50,6 @@ h1 {
 /* Header */
 
 /* Nav Bar  */
-
-
 
 .nav-link {
     color: var(--lemon-chiffon);
@@ -67,21 +71,111 @@ h1 {
 }
 
 .page-header {
-    background-image: url('../images/background.jpg');
-    height: 850px;
-    background-position: center;
+    background-color: var(--eerie-black);
+    background-image: url('../images/background-name.jpg');
+    height: 950px;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 
+
 /* About Me */
 
-.about-me {
+.about {
     background-color: var(--eerie-black);
 }
 
-.about-content {
+.about-intro {
+    
     text-align: left;
-    padding: 5% 20%;
+    border: 1px solid var(--lemon-chiffon);
+    margin: 0 5%;
+    padding: 2%;
+}
+
+
+.about-columns {
+    margin: 0 5%;
+    padding: 5% 0;
+    text-align: left;
+}
+
+.mountain-image {
+    background-image: url('../design/01.jpg');
+    height: 55vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: 1px solid var(--sage);
+    /* padding: 25%; */
+}
+
+.about-col-right {
+    padding-top: 15%;
+}
+
+.custom-shape-divider-top-1680466253 .shape-fill {
+    fill: #1A1A1A;
+}
+
+/* Resume Carousel  */
+
+.carousel-item {
+    padding: 5% 15%;
+    text-align: center;
+
+    min-height: 500px;
+
+}
+
+.item-title {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subitem {
+    padding: 2% 5%;
+}
+
+.subitem-title {
+    text-transform: uppercase;
+    margin-bottom: 1%;
+}
+
+.subitem-text {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 1100px) {
+    
+    .page-header {
+        background-image: url('../images/background-name.jpg');
+        height: 650px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
+}
+
+
+@media screen and (max-width: 750px) {
+    
+    .page-header {
+        background-image: url('../images/background-name.jpg');
+        height: 450px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
 }
