@@ -2,6 +2,9 @@
 
 
 :root { 
+    --white-lemon: rgb(250, 249, 242);
+
+    
     --lemon-chiffon: hsla(53, 96%, 89%, 1);
     --sage: hsla(74, 21%, 64%, 1);
     --sage-2: hsla(60, 27%, 69%, 1);
@@ -33,6 +36,18 @@ h3 {
 
 hr {
     margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--moss-green);
+    text-shadow: 1px 1px var(--white-lemon);
+    transition: 0.5s;
+}
+
+a:hover {
+    color: var(--white-lemon);
+    text-shadow: 1px 1px var(--lemon-chiffon);
 }
 
 
@@ -128,7 +143,6 @@ hr {
     text-align: center;
 
     min-height: 500px;
-
 }
 
 .item-title {
@@ -149,7 +163,47 @@ hr {
 .subitem-text {
     font-size: 0.8rem;
     font-weight: 200;
+    margin-bottom: 0.5rem;
 }
+
+.carousel-indicators {
+    margin: 2rem;
+}
+
+/* Download  */
+
+.download {
+    background-color: var(--eerie-black);
+    color: var(--lemon-chiffon);
+
+}
+
+.download-row {
+    padding: 5%;
+    text-align: right;
+}
+
+
+.download-title {
+
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.resume-image {
+    background-image: url('../images/resume.jpg');
+    height: 20vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.resume-image:hover {
+    height: 70vh;
+}
+
+
 
 @media screen and (max-width: 1100px) {
     
