@@ -40,10 +40,15 @@ hr {
 
 a {
     text-decoration: none;
-    color: var(--moss-green);
+    color: var(--lemon-chiffon);
     transition: 0.5s;
 }
 
+a:hover {
+    background-color: var(--lemon-chiffon);
+    color: var(--reseda-green);
+    box-shadow: 2px 2px var(--sage);
+}
 
 
 /* Bootstrap and custom container  */
@@ -136,14 +141,17 @@ a {
 
 /* Resume Carousel  */
 
+
 .carousel-inner {
-    height: 70vh;
     background-color: var(--black-olive-2);
+    flex-direction: row;
+
 }
 
 .carousel-item {
     padding: 5% 15%;
     text-align: center;
+
 }
 
 .item-title {
@@ -170,10 +178,12 @@ a {
 }
 
 
+
 /* Download  */
 
 .download {
     background-color: var(--eerie-black);
+
 }
 
 .download-row {
@@ -192,10 +202,7 @@ a {
     text-shadow: 1px 1px var(--white-lemon);
 }
 
-.resume-download:hover {
-    color: var(--white-lemon);
-    text-shadow: 1px 1px var(--moss-green);
-}
+
 
 
 .resume-image {
