@@ -118,7 +118,7 @@ a:hover {
 }
 
 .mountain-image {
-    background-image: url('../design/01.jpg');
+    background-image: url('../images/01.jpg');
     height: 55vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,26 +129,28 @@ a:hover {
 }
 
 .about-col-right {
-    padding-top: 15%;
-}
-
-.custom-shape-divider-top-1680466253 .shape-fill {
-    fill: #1A1A1A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Resume Carousel  */
 
+.carousel-inner {
+    height: 70vh;
+}
+
 .carousel-item {
     padding: 5% 15%;
     text-align: center;
-
-    min-height: 500px;
 }
 
 .item-title {
     margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: var(--reseda-green);
 }
 
 .subitem {
@@ -156,7 +158,8 @@ a:hover {
 }
 
 .subitem-title {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
+    font-style: italic;
     margin-bottom: 1%;
 }
 
@@ -166,16 +169,11 @@ a:hover {
     margin-bottom: 0.5rem;
 }
 
-.carousel-indicators {
-    margin: 2rem;
-}
 
 /* Download  */
 
 .download {
     background-color: var(--eerie-black);
-    color: var(--lemon-chiffon);
-
 }
 
 .download-row {
@@ -214,6 +212,21 @@ a:hover {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+    }
+
+    .mountain-image {
+        background-image: url('../images/01.jpg');
+        height: 55vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 1px solid var(--sage);
+        /* padding: 25%; */
+    }
+
+    .download-row {
+        padding: 20% 10%;
     }
 
 
