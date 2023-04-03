@@ -50,6 +50,27 @@ a:hover {
     box-shadow: 2px 2px var(--sage);
 }
 
+/* Scrollbar  */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--black-olive-2);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--reseda-green);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--sage);
+  }
+
 
 /* Bootstrap and custom container  */
 
@@ -62,9 +83,11 @@ a:hover {
 }
 
 
-/* Header */
 
-/* Nav Bar  */
+
+/* Header Nav Bar*/
+
+
 
 .navbar {
     background-color: var(--black-olive-2);
@@ -133,6 +156,7 @@ a:hover {
 }
 
 .about-col-right {
+    padding: 5% 5% 5% 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,14 +168,11 @@ a:hover {
 
 .carousel-inner {
     background-color: var(--black-olive-2);
-    flex-direction: row;
-
 }
 
 .carousel-item {
     padding: 5% 15%;
     text-align: center;
-
 }
 
 .item-title {
@@ -318,3 +339,5 @@ a:hover {
 
 
 }
+
+
