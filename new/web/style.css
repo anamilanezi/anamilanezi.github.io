@@ -220,7 +220,7 @@ a {
 
 .projects {
     background-color: var(--black-olive-2);
-    height: 75vh;
+    /* height: 75vh; */
     padding: 3% 5%;
 }
 
