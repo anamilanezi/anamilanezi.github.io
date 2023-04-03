@@ -41,14 +41,9 @@ hr {
 a {
     text-decoration: none;
     color: var(--moss-green);
-    text-shadow: 1px 1px var(--white-lemon);
     transition: 0.5s;
 }
 
-a:hover {
-    color: var(--white-lemon);
-    text-shadow: 1px 1px var(--moss-green);
-}
 
 
 /* Bootstrap and custom container  */
@@ -192,6 +187,16 @@ a:hover {
     font-style: italic;
     font-size: 2.5rem;
 }
+
+.resume-download {
+    text-shadow: 1px 1px var(--white-lemon);
+}
+
+.resume-download:hover {
+    color: var(--white-lemon);
+    text-shadow: 1px 1px var(--moss-green);
+}
+
 
 .resume-image {
     background-image: url('../images/resume.jpg');
