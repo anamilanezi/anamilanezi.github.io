@@ -47,7 +47,7 @@ a {
 
 a:hover {
     color: var(--white-lemon);
-    text-shadow: 1px 1px var(--lemon-chiffon);
+    text-shadow: 1px 1px var(--moss-green);
 }
 
 
@@ -66,6 +66,10 @@ a:hover {
 
 /* Nav Bar  */
 
+.navbar {
+    background-color: var(--black-olive-2);
+}
+
 .nav-link {
     color: var(--lemon-chiffon);
     text-transform: uppercase;
@@ -74,7 +78,7 @@ a:hover {
 .nav-link:hover {
     background-color: var(--lemon-chiffon);
     color: var(--reseda-green);
-    box-shadow: 4px 4px var(--sage);
+    box-shadow: 2px 2px var(--sage);
 }
 
 .nav-link:visited {
@@ -139,6 +143,7 @@ a:hover {
 
 .carousel-inner {
     height: 70vh;
+    background-color: var(--black-olive-2);
 }
 
 .carousel-item {
@@ -201,6 +206,13 @@ a:hover {
     height: 70vh;
 }
 
+/* Projects  */
+
+.projects {
+    background-color: var(--black-olive-2);
+    height: 75vh;
+    padding: 3% 5%;
+}
 
 
 @media screen and (max-width: 1100px) {
