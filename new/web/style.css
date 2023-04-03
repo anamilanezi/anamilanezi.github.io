@@ -213,12 +213,60 @@ a {
 
 /* Projects  */
 
+.card {
+    border-radius: 0;
+    border-color: var(--eerie-black);
+}
+
 .projects {
     background-color: var(--black-olive-2);
     height: 75vh;
     padding: 3% 5%;
 }
 
+.projects-title {   
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.preview-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+.preview-img:hover{
+    filter: none;
+}
+
+.project-info {
+    font-size: 0.7rem;
+    color: var(--reseda-green);
+}
+
+.project-title{
+    background-color: var(--black-olive-2);
+    color: var(--lemon-chiffon);
+    text-align: center;
+    padding: 5px 0;
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.card-footer a {
+    text-transform: uppercase;
+    color: var(--black-olive-2);
+}
+
+.card-footer a:hover {
+    background-color: var(--black-olive-2);
+    color: var(--lemon-chiffon);
+}
 
 @media screen and (max-width: 1100px) {
     
