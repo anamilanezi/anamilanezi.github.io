@@ -4,6 +4,7 @@
 :root { 
     --white-lemon: rgb(250, 249, 242);
 
+    --lemon: rgb(255, 252, 233);
     
     --lemon-chiffon: hsla(53, 96%, 89%, 1);
     --sage: hsla(74, 21%, 64%, 1);
@@ -298,6 +299,37 @@ a:hover {
 .card-footer a:hover {
     background-color: var(--black-olive-2);
     color: var(--lemon-chiffon);
+}
+
+.visit-projects {
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--sage-2);
+    padding-top: 5%;
+    text-align: center;
+
+}
+
+/* Footer  */
+
+.contact {
+    margin: 0;
+    background-color: var(--eerie-black);
+    padding: 5% 0;
+    text-align: center;
+    font-family: var(--title-font);
+}
+
+.year {
+    color: var(--reseda-green);
+    padding: 0;
+    margin: 0;
+}
+
+.contact-link {
+    font-size: 1.5rem;
+    padding: 0 1%;
 }
 
 @media screen and (max-width: 1100px) {
