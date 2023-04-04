@@ -302,9 +302,8 @@ a:hover {
 }
 
 .visit-projects {
-    font-family: var(--title-font);
-    font-size: 1.2rem;
-    font-style: italic;
+
+    text-transform: uppercase;
     color: var(--sage-2);
     padding-top: 5%;
     text-align: center;
@@ -313,16 +312,40 @@ a:hover {
 
 /* Footer  */
 
-.contact {
-    margin: 0;
+/* .contact {
     background-color: var(--eerie-black);
+    background-image: url('../images/background.jpg');
+    height: 950px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+} */
+
+.contact-info {
+    
+    background-color: var(--eerie-black);
+    background-image: url('../images/02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    margin: 0;
     padding: 5% 0;
+
+    color: var(--lemon-chiffon);
+
     text-align: center;
     font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: italic;
 }
 
 .year {
-    color: var(--reseda-green);
+    color: var(--black-olive);
     padding: 0;
     margin: 0;
 }
@@ -330,7 +353,17 @@ a:hover {
 .contact-link {
     font-size: 1.5rem;
     padding: 0 1%;
+    color: var(--black-olive-2);
 }
+
+.contact-link:hover {
+    font-size: 1.5rem;
+    padding: 0 1%;
+    color: var(--lemon-chiffon);
+    background-color: transparent;
+    box-shadow: none;
+}
+
 
 @media screen and (max-width: 1100px) {
     
