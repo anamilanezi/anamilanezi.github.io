@@ -115,7 +115,7 @@ a:hover {
 
 .page-header {
     background-color: var(--eerie-black);
-    background-image: url('../images/background-name.jpg');
+    background-image: url('../images/background.jpg');
     height: 950px;
     background-position: left;
     background-repeat: no-repeat;
@@ -128,11 +128,11 @@ a:hover {
 
 .about {
     background-color: var(--eerie-black);
+    text-align: left;
 }
 
 .about-intro {
     
-    text-align: left;
     border: 1px solid var(--lemon-chiffon);
     margin: 0 5%;
     padding: 2%;
@@ -142,7 +142,7 @@ a:hover {
 .about-columns {
     margin: 0 5%;
     padding: 5% 0;
-    text-align: left;
+
 }
 
 .mountain-image {
@@ -335,7 +335,7 @@ a:hover {
 @media screen and (max-width: 1100px) {
     
     .page-header {
-        background-image: url('../images/background-name.jpg');
+        background-image: url('../images/background.jpg');
         height: 650px;
         background-position: left;
         background-repeat: no-repeat;
@@ -363,14 +363,29 @@ a:hover {
 
 
 @media screen and (max-width: 750px) {
+
+    .about {
+        text-align: center;
+    }
     
     .page-header {
-        background-image: url('../images/background-name.jpg');
+        background-image: url('../images/background.jpg');
         height: 450px;
         background-position: left;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+    }
+
+    .mountain-image {
+        background-image: url('../images/01.jpg');
+        height: 400px;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border: 1px solid var(--sage);
+        /* padding: 25%; */
     }
 
 
