@@ -241,7 +241,7 @@ a:hover {
 
 /* Projects  */
 
-.card {
+.card, .card-img-top {
     border-radius: 0;
     border-color: var(--eerie-black);
 }
@@ -274,6 +274,10 @@ a:hover {
 .project-info {
     font-size: 0.7rem;
     color: var(--reseda-green);
+}
+
+.project-info a {
+    color: var(--black-olive-2);
 }
 
 .project-title{
