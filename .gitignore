@@ -1,7 +1,6 @@
 # Default ignored files
 **/.idea/
 **/old/
-**/new/
 **/design/
 **/test/
 *.psd

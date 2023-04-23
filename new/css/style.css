@@ -78,7 +78,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 20%;
 }
 
@@ -87,8 +87,8 @@ h2 {
 .contact-link:link,
 .contact-link:visited {
     background-color: #fff;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     border-radius: 10rem;
     display: flex;
     justify-content: center;
@@ -98,7 +98,9 @@ h2 {
 }
 
 .contact-link:hover {
-    color: var(--purple);
+    background-color: var(--primary-light);
+    color: #fff;
+
 }
 
 
@@ -118,13 +120,15 @@ h2 {
 /* About */
 .about {
     width: 25%;
-    text-align: justify;
+    /* text-align: justify; */
     padding: 0 5rem 0 0;
 }
 
 .about__img {
     margin: 2rem 0;
     width: 100%;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #fff;
 }
 
 .about__description {
@@ -221,72 +225,85 @@ h2 {
 
 
 
+@media screen and (max-width: 1100px){
+    .container {
+        width: 90vw;
+    }
 
+    .about {
+        padding-right: 2.5rem;
+    }
 
+    .details {
+        padding-left: 2.5rem;
+    }
 
+    .item__group {
+        width: 90%;
+    }
 
+    .item__year {
+        font-size: 1.2rem;
+    }
 
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s ease-out;
-    position: relative;
-    font-size: 1.6rem,
-}
+    .header {
+        padding: 4rem 5rem; 
+        width: inherit;
+        margin: 0 auto;
+    }
+    
+    .header__title {
+        color: #fff;
+    }
+    
+    .header__contact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2.5rem;
+        width: 20%;
+    }
+    
 
-.btn:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: #fff;
-    color: #777;    
-}
-
-/* BUTTON ANIMATION USING PSEUDOELEMENTS */
-
-/* Content and display must be provided for ::after and ::before */
-/* The after pseudoelement acts like a child of the element  */
-.btn::after {
-    content: "";
-    display:inline-block;
-    height: 100%;
-    width: 100%; 
-    border-radius: 10rem;
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s ease-out;
 
 }
 
-.btn-white::after {
-    background-color: #fff;
+@media screen and (max-width: 950px){
+    .container {
+        flex-direction: column;
+    }
+
+    .about,
+    .experience,
+    .details {
+        width: 100%;
+    }
+
+    .about,
+    .details {
+        padding: 0;
+    }
+   
+
+    .about__img {
+        width: auto;
+        float: left;
+        margin: 1rem 2rem 1rem 0;
+    }
+ 
+}
+
+@media screen and (max-width: 500px) {
+    .item__group {
+        width: 100%;
+    }
+
+    .item__year {
+        font-size: 1.1rem;
+    }
 }
 
 
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    animation: moveInBottom .5s ease-out .75s;
-    /* Define the initial state as 0% */
-    animation-fill-mode: backwards;
-
-}
 
 /* ANIMATIONS  */
 
