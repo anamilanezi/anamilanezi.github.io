@@ -2,9 +2,10 @@
 
 
 :root {
+    --primary-light: #3BD388;
     --primary: #39AEA9;
-    --yellow: #FEAE06;
     --primary-dark: #5B7E7D;
+    --yellow: #FEAE06;
     --text: #121427;
     --gray: #F3F3F3;
     --purple: #9b8bf4;
@@ -48,21 +49,56 @@ h2 {
 }
 
 
-.about, .certifications, .work {
+.about, 
+.certifications, 
+.work,
+.skills,
+.languages {
     margin-bottom: 3rem;
 }
 /* HEADER  */
 
 
 .header {
-    padding: 5rem 0;
-    text-align: center;
+    padding: 4rem; 
     /* background-image: linear-gradient(var(--primary-dark), var(--primary)); */
     background-position: 150%;
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__title {
     color: #fff;
+}
+
+.header__contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    width: 20%;
+}
+
+
+
+.contact-link:link,
+.contact-link:visited {
+    background-color: #fff;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary)
+}
+
+.contact-link:hover {
+    color: var(--purple);
 }
 
 
@@ -73,7 +109,7 @@ h2 {
     background-color: var(--gray);
     padding: 4rem;
     border-radius: 5rem;
-    width: 70vw;
+    width: 75vw;
     margin: 0 auto 3rem;
 }
 
@@ -83,19 +119,23 @@ h2 {
 .about {
     width: 25%;
     text-align: justify;
-    padding: 0 3.4rem 0 0;
+    padding: 0 5rem 0 0;
 }
 
 .about__img {
     margin: 2rem 0;
     width: 100%;
-
 }
 
-/* Skills */
-.skills {
+.about__description {
+    font-size: 1.6rem;
+    line-height: 1.7;
+}
+
+/* details */
+.details {
     width: 25%;
-    padding: 0 0 0 3.4rem;
+    padding: 0 0 0 5rem;
 
 }
 
@@ -109,13 +149,13 @@ h2 {
     justify-content: flex-start;
 }
 
-.experience__list {
+.list {
     list-style: none;
 }
 
 .experience__item {
     display: flex;
-    padding: 1rem 0;
+    padding: 1.5rem 0;
 }
 
 
@@ -157,12 +197,24 @@ h2 {
 
 .academic .item__deco,
 .academic .item__year {
-    background-color: #9b8bf4;
+    background-color: var(--purple);
 }
 
 
+.details__item {
+    margin: 1.4rem 0;
+    padding: 0.2rem 2rem;
+    border-radius: 10rem;
+    font-weight: 800;
+}
 
+.skills .details__item {
+    background-color: var(--primary-light);
+}
 
+.languages .details__item {
+    background-color: var(--purple);
+}
 
 
 
