@@ -2,314 +2,195 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <!-- Font Awesome -->
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/084b2a3c9b.js" crossorigin="anonymous"></script>
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/style.css">
-  <title>AnaMedeirosMilanezi</title>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Medeiros Milanezi</title>
+    <script src="https://kit.fontawesome.com/084b2a3c9b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container-fluid">
 
-    <div class="page-container">
-      <!-- Nav Bar -->
-      <header>
+    <header class="header">
+        <h1 class="header__title">
+            Ana Medeiros Milanezi
+        </h1>
+        <div class="header__contact">
 
-        <nav class="navbar navbar-expand-md navbar-dark">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item mx-3"><a href="#about-link" class="nav-link">About me</a></li>
-              <li class="nav-item mx-3"><a href="#resume-link" class="nav-link">Resume</a></li>
-              <li class="nav-item mx-3"><a href="#projects-link" class="nav-link">Projects</a></li>
-              <!-- <li class="nav-item mx-3"><a href="#" class="nav-link">Skills</a></li> -->
-              <li class="nav-item mx-3"><a href="#contact-link" class="nav-link">Contact</a></li>
-
-            </ul>
-          </div>
-        </nav>
-        <!-- Title Header  -->
-        <section class="page-header">
-        </section>
-      </header>
-
-
-      <main>
-
-        <section class="about" id="about-link">
-          <div class="about-intro">
-            <h1>Hi! I'm Ana.</h1>
-
-            <p>
-              As a Biology graduate, I was always fascinated by how technology could be used to advance
-              scientific research. Additionally, the growing demand for technology skills and job
-              opportunities in the industry made me decide to pivot my career towards this ever growing
-              field. So, I decided to take the leap and switch to technology.
-            </p>
-            <p>
-              At first, it was challenging, and I had to learn new skills like coding and to develop my logical thinking.
-              However, my biology background gave me a unique perspective and approach to problem-solving
-              that has been valuable in the tech industry and helped me a lot in my journey.
-
-            </p>
-          </div>
-        </section>
-        <section class="about">
-          <div class="about-columns">
-            <div class="row">
-              <div class="col-lg-6 col-sm-12">
-                <div class="mountain-image">
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-12 about-col-right">
-                <!-- <div class="about-col-right"> -->
-                <p>
-                  I started to study Python and Web Development tools, like HTML, CSS and JavaScript, and with my
-                  new skills I received a job opportunity as a freelancer writing web scrapers.
-                </p>
-                <p>
-                  This first job opportunity provided me with a solid foundation to build on and the
-                  confidence to take on new challenges in the field. I'm always trying to learn more and to improve,  
-                   so now I've started to study NodeJS and Backend development. 
-                </p>
-                <p>
-                  If you interested to know more about my path in technology and my previous
-                  experiences you can download my resume here. And if you want to get in touch, I'll
-                  be happy to talk to you, just send me an email.
-                </p>
-                <!-- </div> -->
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="resume" id="resume-link">
-
-          <div id="resume-carousel" class="carousel slide" data-bs-ride="false" data-bs-pause="hover">
-
-            <div class="carousel-inner">
-
-              <div class="carousel-item  h-10 active">
-                <h2 class="item-title">Licenses and Certifications </h2>
-                <hr>
-                <div class="subitem">
-                  <h3 class="subitem-title">British School of Creative Arts Data Analytics</h3>
-                  <p class="subitem-text"> <em>(In progress)</em>.</p>
-                </div>
-                <div class="subitem">
-                  <h3 class="subitem-title">
-                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/YXXFU77M6M3M"
-                      target="_blank">
-                      Google Data Analytics
-                    </a>
-                  </h3>
-                  <p class="subitem-text">
-                    Professional certificate. Introduction to key analytical
-                    skills (data collection, data cleaning, analysis and visualization) and tools
-                    (spreadsheets, SQL, programming languages, Tableau).</p>
-                  <!-- <p><a href="https://www.coursera.org/account/accomplishments/professional-cert/YXXFU77M6M3M" target="_blank" ><i class="fa-solid fa-certificate" alt="Link to certificate."></i></a></p> -->
-                </div>
-
-                <div class="subitem">
-                  <h3 class="subitem-title"><a
-                      href="https://cursos.alura.com.br/degree/certificate/58da9d39-8058-4a76-9ba2-fed54e2f9068"
-                      target="_blank">
-                      Oracle One Front End Alura
-                    </a></h3>
-                  <p class="subitem-text">Introduction of HTML5, CSS3, JavaScript and responsive web
-                    design.</p>
-                </div>
-              </div>
-
-              <div class="carousel-item h-100">
-
-                <h2 class="item-title">Professional Experience</h2>
-                <hr>
-                <div class="subitem">
-                  <h3 class="subitem-title">Python Developer Freelancer</h3>
-                  <p class="subitem-text">Collection and treatment of structured and unstructured data
-                    from different sources (HTML, PDF, XLSX, CSV) through Python scripts using
-                    requests, pandas, BeautifulSoup, Selenium, among others libraries.</p>
-                </div>
-                <div class="subitem">
-                  <h3 class="subitem-title">Corporate Travel Manager</h3>
-                  <p class="subitem-text">Sales and management of corporate travel serving large
-                    corporate clients, in addition to prospecting for new ones.</p>
-                </div>
-                <div class="subitem">
-                  <h3 class="subitem-title">Microbiology Laboratory Assistant</h3>
-                  <p class="subitem-text">(Internship)</p>
-                </div>
-
-              </div>
-              <div class="carousel-item h-10">
-                <h2 class="item-title">Academic Background</h2>
-                <hr>
-                <div class="subitem">
-                  <br>
-                  <h3 class="subitem-title">M.Sc. Agricultural and Environmental Microbiology</h3>
-                  <p class="subitem-text"><em>2014 - 2016- Federal University of Rio Grande do Sul</em> </p>
-                  <p class="subitem-text">Antifungal susceptibility of yeasts isolated from anthropogenic watershed.
-                    <a href="https://doi.org/10.1590/0001-3765201820170369">Access the full article. </a>
-                  </p>
-                </div>
-                <div class="subitem">
-                  <br><br>
-                  <h3 class="subitem-title">B.Sc. Biological Sciences</h3>
-                  <p class="subitem-text"><em>2008 - 2013- Federal University of Rio Grande do Sul</em> </p>
-                  <p class="subitem-text">Profile study of intestinal microbiota in experimental
-                    ulcerative colitis model induced in mice of the C57BL/6 lineage</p>
-                </div>
-
-
-              </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#resume-carousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#resume-carousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-
-          </div>
-
-          <div class="download">
-            <div class="row download-row">
-              <div class="col-lg-5">
-                <a href="/resume/AnaM-CV-English.pdf" class="resume-download" target="_blank">
-                  <h2 class="download-title">Download my resume</h2>
-                  <!-- <h2 class="download-title">My</h2>
-                                    <h2 class="download-title">Resume</h2> -->
-                </a>
-              </div>
-              <div class="col">
-                <a href="/resume/AnaM-CV-English.pdf" class="resume-download" target="_blank">
-                  <div class="resume-image"></div>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </section>
-
-        <section class="projects" id="projects-link">
-
-          <h2 class="projects-title">Projects</h2>
-          <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4">
-            <!-- row-cols-1 row-cols-md-2 -->
-            <!-- Card  -->
-            <div class="col-12 text-center">
-              <div class="card h-100 miniature">
-
-                <a href="https://anamilanezi.github.io/front-end-mentor/index.html" target="_blank">
-
-                  <img src="images/projects/frontend-mentor.jpg" class="card-img-top preview-img"
-                    alt="Portfolio page containing Frontend Mentor challanges">
-                </a>
-
-                <div class="card-body">
-                  <h5 class="card-title project-title">Frontend Mentor</h5>
-                  <p class="card-text project-info">Sites developed using the challenges proposed by <a
-                      href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a> platform.</p>
-                  <p class="card-text project-info">#html #css #bootstrap5</p>
-                </div>
-                <div class="card-footer">
-                  <a role="button" href="https://github.com/anamilanezi/front-end-mentor" target="_blank"
-                    class="btn btn-sm">Code</a>
-                  <a role="button" href="https://anamilanezi.github.io/front-end-mentor/index.html" target="_blank"
-                    class="btn btn-sm">Preview</a>
-                </div>
-              </div>
-            </div>
-            <!-- End of card     -->
-            <div class="col-12 text-center">
-              <div class="card h-100 miniature">
-
-                <a href="https://github.com/anamilanezi/pomodoge-timer" target="_blank">
-
-                  <img src="images/projects/pomodoge.jpg" class="card-img-top preview-img" alt="Python">
-                </a>
-
-                <div class="card-body">
-                  <h5 class="card-title project-title">Pomodoge Timer</h5>
-                  <p class="card-text project-info">A pomodoro timer developed with Python, that load a random picture
-                    on every cycli using API.</p>
-                  <p class="card-text project-info">#python3 #tkinter #API</p>
-                </div>
-                <div class="card-footer">
-                  <a role="button" href="https://github.com/anamilanezi/pomodoge-timer/blob/main/en-us/pomodoge.py"
-                    target="_blank" class="btn btn-sm">Code</a>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-12 text-center">
-              <div class="card h-100 miniature">
-                <a href="https://www.kaggle.com/code/anamilanezi/google-capstone-creating-maps" target="_blank"><img
-                    src="images/projects/google-capstone.jpg" class="card-img-top preview-img" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title project-title">Cyclistic Bike Share</h5>
-                  <p class="card-text project-info">Capstone project developed for the Google Data Analytics
-                    Professional Certificate</p>
-                  <p class="card-text project-info">#python3 #pandas #matplotlib #geopandas</p>
-                </div>
-                <div class="card-footer">
-                  <a role="button" href="https://www.kaggle.com/code/anamilanezi/google-capstone-creating-maps"
-                    target="_blank" class="btn btn-sm">Code</a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="visit-projects">Check all my projects visiting my <a href="https://github.com/anamilanezi/" target="_blank">GitHub page</a></p>
-        </section>
-      </main>
-
-      <footer id="contact-link" class="contact">
-        <address class="contact-info">
-          <p class="year">2023</p>
-
-          <p>By Ana Medeiros Milanezi</p>
-          <div class="">
-
-                <a href="https://github.com/anamilanezi" class="contact-link"><i class="fa-brands fa-github-alt icon"></i></a>
-                
-                <a href="https://www.kaggle.com/anamilanezi" class="contact-link"><i class="fa-brands fa-kaggle"></i></a>
-                
-                <a href="mailto:anamilanezi@gmail.com" class="contact-link"><i class="fa-solid fa-envelope icon"></i></a>
-            </div>
+            <a href="https://github.com/anamilanezi" class="contact-link"><i class="fa-brands fa-github-alt icon"></i></a>
+            
+            <a href="https://www.kaggle.com/anamilanezi" class="contact-link"><i class="fa-brands fa-kaggle"></i></a>
+            
+            <a href="mailto:anamilanezi@gmail.com" class="contact-link"><i class="fa-solid fa-envelope icon"></i></a>
         </div>
-        </address>
-      </footer>
+    </header>
 
-    </div>
-  </div>
+    <main class="container">
 
-  <!-- JS bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
+        <!-- LEFT CONTAINER ABOUT ME -->
+        <section class="about">
+            <h2 class="title">
+                About 
+                Me
+            </h2>
+            <img class="about__img" src="images/me.gif" alt="">
+            <p class="about__description">I'm a curious and creative person that has always been fascinated by the power
+                of technology. My background as a Biology graduate gave me perspective and tools to problem-solving that
+                are valuable in the tech industry and helped me a lot in my ongoing journey to become a Web Developer,
+                and now I'm looking for opportunities where I can contribute, apply my knowledge and to grow even more
+                on the career.</p>           
+        </section>
+
+        <section class="experience">
+            <div class="certifications">
+                <h2 class="page__title">
+                    Licenses & 
+                    Certifications</h2>
+                <ul class="experience__list list">
+
+                    <li class="experience__item">
+
+                        <div class="item__deco"></div>
+                        <div class="item__group">
+                            <h3 class="item__title">Oracle One Front End</h3>
+                            <small class="item__sub">Alura</small>
+
+                            <p class="item__description">HTML5, CSS3, JavaScript and Responsive Design</p>
+                        </div>
+                        <span class="item__year">2022</span>
+
+                    </li>
+
+                    <li class="experience__item">
+
+                        <div class="item__deco"></div>
+                        <div class="item__group">
+                            <h3 class="item__title">Google Data Analytics Professional Certificate</h3>
+                            <small class="item__sub">Coursera</small>
+
+                            <p class="item__description">HTML5, CSS3, JavaScript and Responsive Design</p>
+                        </div>
+                        <span class="item__year">2021 - 2022</span>
+
+                    </li>
+
+                    <li class="experience__item">
+                        <div class="item__deco"></div>
+                        <div class="item__group">
+                            <h3 class="item__title">Advanced CSS & Sass</h3>
+                            <small class="item__sub">Udemy</small>
+
+                            <p class="item__description">Modern and advanced CSS properties and techniques, CSS
+                                architecture, Flexbox, CSS Grid layouts, responsive design workflows</p>
+                        </div>
+                        <span class="item__year">2023 - Present</span>
+                    </li>
+
+                    
+                    <li class="experience__item">
+                        <div class="item__deco"></div>
+                        <div class="item__group">
+                            <h3 class="item__title">Node.js, Express, and MongoDB Bootcamp</h3>
+                            <small class="item__sub">Udemy</small>
+                            <p class="item__description">Fundamentals of Node.js, Express, RESTful API, Mongoose, data modelling, security, error handling workflows, deployment, and more. </p>
+                        </div>
+                        <span class="item__year">2023 - Present</span>
+                    </li>
+
+
+                    <!-- <li class="experience__item">Google Data Analytics Professional Certificate'</li>
+                    <li class="experience__item">Advanced CSS & Sass</li>
+                    <li class="experience__item">Node.js, Express, and MongoDB Bootcamp</li> -->
+                </ul>
+            </div>
+            <div class="work">
+                <h2 class="page__title">Work Experience</h2>
+                <ul class="experience__list list">
+
+                    <li class="experience__item">
+                        <div class="item__deco"></div>
+                        <div class="item__group">
+                            <h3 class="item__title">Python Developer Freelancer</h3>
+                            <small class="item__sub">Costdrivers</small>
+                            <p class="item__description">Data collection and treatment using Python libraries (requests, pandas, BeautifulSoup, Selenium, among others libraries).</p>
+                        </div>
+                        <span class="item__year">2022 - 2023</span>
+                    </li>
+
+                    
+                    <li class="experience__item">
+                        <div class="item__deco"></div>
+                        <div class="item__group">
+                            <h3 class="item__title">Corporate Travel Manager</h3>
+                            <small class="item__sub">Cinco TI</small>
+                            <p class="item__description">Custumer service, sales and management of corporate travels.</p>
+                        </div>
+                        <span class="item__year">2022</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="academic">
+                <h2 class="title">
+                    Academic 
+                    Background
+                </h2>
+                <ul class="experience__list list">
+
+                    <li class="experience__item">
+                        <div class="item__deco"></div>
+                        <div class="item__group">
+                            <h3 class="item__title">B.Sc. Biological Sciences</h3>
+                            <small class="item__sub">Federal University of Rio Grande do Sul</small>
+                        </div>
+                        <span class="item__year">2008-2013</span>
+
+                    </li>
+    
+                    <li class="experience__item">
+                        <div class="item__deco"></div>
+                        <div class="item__group">
+                            <h3 class="item__title">M.Sc. in Agricultural and Environmental Microbiology</h3>
+                            <small class="item__sub">Federal University of Rio Grande do Sul</small>
+                        </div>
+                        <span class="item__year">2014-2016</span>
+
+                    </li>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="skills">
+
+                <h2 class="title">
+                    Skills
+                </h2>
+                <ul class="details__list list">
+                    <li class="details__item">HTML / CSS / JavaScript</li>
+                    <li class="details__item">Bootstrap</li>
+                    <li class="details__item">Python</li>
+                    <li class="details__item">SQL</li>
+                    <li class="details__item">Creativity :)</li>
+                    <li class="details__item">Adobe Photoshop</li>
+                    <li class="details__item">Figma</li>
+                </ul>
+            </div>
+            <div class="languages">
+                
+                <h2 class="title">
+                    Languages
+                </h2>
+                <ul class="details__list list">
+                    <li class="details__item">Native in Portuguese</li>
+                    <li class="details__item">Fluent in English</li>
+
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
 </body>
 
 </html>
