@@ -7,6 +7,7 @@
     --primary-dark: #5B7E7D;
     --text: #121427;
     --gray: #F3F3F3;
+    --purple: #9b8bf4;
 
 }
 
@@ -29,7 +30,7 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--text);
     box-sizing: border-box;
     /* padding: 0 30rem; */
@@ -46,13 +47,17 @@ h2 {
     font-weight: 400;
 }
 
+
+.about, .certifications, .work {
+    margin-bottom: 3rem;
+}
 /* HEADER  */
 
 
 .header {
     padding: 5rem 0;
     text-align: center;
-    background-image: linear-gradient(var(--primary-dark), var(--primary));
+    /* background-image: linear-gradient(var(--primary-dark), var(--primary)); */
     background-position: 150%;
 }
 
@@ -62,27 +67,23 @@ h2 {
 
 
 /* Portfolio */
-.portfolio {
+.container {
     display: flex;
     flex-direction: row;
     background-color: var(--gray);
     padding: 4rem;
     border-radius: 5rem;
-    margin: 0 30rem;
+    width: 70vw;
+    margin: 0 auto 3rem;
 }
 
-.portfolio::before {
-    content: " ";
-    background-color: var(--primary-dark);
-    height: 100vh;
-}
 
 
 /* About */
 .about {
     width: 25%;
     text-align: justify;
-    padding: 0 2rem 0 0;
+    padding: 0 3.4rem 0 0;
 }
 
 .about__img {
@@ -91,10 +92,18 @@ h2 {
 
 }
 
+/* Skills */
+.skills {
+    width: 25%;
+    padding: 0 0 0 3.4rem;
+
+}
+
+
 /* Experience */
+
 .experience {
     width: 50%;
-    padding: 0 2rem 0 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -102,7 +111,6 @@ h2 {
 
 .experience__list {
     list-style: none;
-    width: 100%;
 }
 
 .experience__item {
@@ -110,37 +118,48 @@ h2 {
     padding: 1rem 0;
 }
 
+
 .item__deco {
-    background-color: #FEAE06;
     width: 1.5rem;
     border-radius: 50rem;
 }
 
 .item__group {
     margin-left: 1rem;
-    width: 70%;
+    width: 75%;
 }
 
-.item__heading {
-    display: flex;
-    justify-content: space-between;
+.item__sub {
+    color: var(--primary-dark);
+    text-transform: uppercase;
 }
+
 
 .item__year {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FEAE06;
-    width: 8rem;
-    height: 3rem;
+    width: 13rem;
+    height: 2.5rem;
     border-radius: 50rem;
 
 }
 
-/* Academic */
-.academic {
-    width: 25%;
+.certifications .item__deco,
+.certifications .item__year {
+    background-color: var(--yellow);
 }
+
+.work .item__deco,
+.work .item__year {
+    background-color: var(--primary);
+}
+
+.academic .item__deco,
+.academic .item__year {
+    background-color: #9b8bf4;
+}
+
 
 
 
