@@ -220,7 +220,9 @@ h2 {
     background-color: var(--purple);
 }
 
-
+.item__year-mobile {
+    display: none;
+}
 
 
 
@@ -294,13 +296,69 @@ h2 {
 }
 
 @media screen and (max-width: 500px) {
+
+    .container {
+        padding: 2rem;
+    }
+
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__title {
+        text-align: center;
+        font-size: 3.2rem;
+    }
+
+    .header__contact {
+        width: 100%;
+    }
+
+    .about {
+        text-align: justify;
+    }
+
+    .about__img {
+        width: 100%;
+        display: block;
+        float: none;
+        margin: 1rem auto;
+    }
+
+
     .item__group {
         width: 100%;
     }
 
     .item__year {
-        font-size: 1.1rem;
+        display: none;
     }
+
+    .item__year-mobile {
+        display: inline-block;
+        font-weight: 800;
+    }
+    
+
+    .certifications .item__year-mobile {
+        color: var(--yellow);
+    }
+    
+
+    .work .item__year-mobile {
+        color: var(--primary);
+    }
+    
+
+    .academic .item__year-mobile {
+        color: var(--purple);
+    }
+
+
+
+
 }
 
 
