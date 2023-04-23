@@ -13,3 +13,9 @@ function removeActiveClasses() {
         panel.classList.remove('active')
     })
 }
+
+const resume = document.querySelector('.resume__title')
+
+resume.addEventListener('mouseover', () => {
+    resume.classList.remove('fa-fade')
+})
