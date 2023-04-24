@@ -1,0 +1,117 @@
+{
+    "pt": {
+
+        "sectionTitles": [
+            "Sobre mim", 
+            "Licenças & Certificações",
+            "Experiência Profissional",
+            "Formação Acadêmica",
+            "Habilidades",
+            "Idiomas",
+            "Projetos"
+        ],
+
+        "descriptions": [
+            "Sou uma pessoa criativa e curiosa que sempre foi fascinada pelo poder da tecnologia. Meu background acadêmico e na pesquisa me oferecem ferramentas e uma perspectiva voltada a resolução de problemas valiosas para a indústria e que me ajudam muito nessa jornada para me tornar uma Web Developer, e agora busco por oportunidades onde eu possa contribuir e aplicar os conhecimentos e me desenvolver ainda mais na carreira.",
+            "HTML5, CSS3, JavaScript e Design Responsivo",
+            "Introdução às principais habilidades e ferramentas analíticas (planilhas, SQL, bancos de dados, linguagens de programação e visualização)",
+            "Técnicas avançadas e modernas de CSS, arquitetura de CSS, Sass, layouts com Flexbox e CSS Grid, fluxo de design responsivo e mais.",
+            "Fundamentos de Node.js, Express, API RESTful, Mongoose, modelagem de dados, segurança, tratamento de erros, implantação e mais.",
+"Coleta e tratamento de dados através de scripts em Python utilizando as bibliotecas pandas, requests, BeautifulSoup, Selenium, dentre outras",
+"Atendimento ao cliente, venda e gestão de viagens atendendo a grandes empresas, prospecção de novos clientes."
+
+
+        ],
+
+        "listedTitles": [
+            "Oracle One Front End",
+            "Certificado Profissional Analista de Dados Google",
+            "CSS & Sass Avançado",
+            "Node.js, Express, e MongoDB Bootcamp",
+            "Desenvolvedora Python Freelancer",
+            "Gestora de Viagens Corporativas",
+            "Bacharel em Ciências Biológicas",
+            "Mestrado em Microbiologia Agrícola e do Ambiente"
+
+        ],
+        "projectsTitles": [
+            "Cartão interativo",
+            "Calcula gorjeta",
+            "F.A.Q.",
+            "Avaliação Interativa",
+            "Google Capstone",
+            "Pomodoge Timer"
+        ],
+        
+        "university": "Universidade Federal do Rio Grande do Sul",
+        "details"    : [ 
+            "Criatividade :)",
+            "Português nativo",
+            "Inglês fluente"
+        ],
+        "openProjects": "Clique aqui para abrir",
+        "year": "Atual"
+
+        
+    },
+    "en": {
+
+        "sectionTitles": [
+            "About Me",
+            "Licenses & Certifications",
+            "Work Experience",
+            "Academic Background",
+            "Skills",
+            "Languages",
+            "Projects"
+        ],
+
+        "descriptions": [
+            "I'm a curious and creative person that has always been fascinated by the power of technology. My background as a Biology graduate gave me perspective and tools to problem-solving that are valuable in the tech industry and helped me a lot in my ongoing journey to become a Web Developer . Now I'm looking for opportunities where I can contribute, apply my knowledge and to grow even more on the career.",
+
+            "HTML5, CSS3, JavaScript and Responsive Design",
+            
+            "Introduction to key analytical skills and tools (spreadsheets, SQL, programming languages, Tableau).",
+            
+            "Modern and advanced CSS properties and techniques, CSS architecture, Flexbox, CSS Grid layouts responsive design workflows",
+            
+            "Fundamentals of Node.js, Express, RESTful API, Mongoose, data modelling, security, error handling workflows, deployment, and more.",
+            
+            "Data collection and treatment using Python libraries (requests, pandas, BeautifulSoup, Selenium, among others libraries).",
+            
+            "Custumer service, sales and management of corporate travels."
+        ],
+
+        "listedTitles": [
+            "Oracle One Front End",
+            "Google Data Analytics Professional Certificate",
+            "Advanced CSS & Sass",
+            "Node.js, Express, and MongoDB Bootcamp",
+            "Python Developer Freelancer",
+            "Corporate Travel Manager",
+            "B.Sc. Biological Sciences",
+            "M.Sc. in Agricultural and Environmental Microbiology"
+        ],
+
+        "projectsTitles": [
+            "Interactive Card",
+            "Tip Calculator",
+            "FAQ Accordion Card",
+            "Interactive Rating",
+            "Google Capstone",
+            "Pomodoge Timer"
+        ],
+        
+        "university": "Federal University of Rio Grande do Sul",
+        "details"    : [ 
+            "Creativity :)",
+            "Native in Portuguese",
+            "Fluent in English"
+        ],
+        "openProjects": "Click here to open",
+        "year": "Present"
+
+        
+    }
+}
+
