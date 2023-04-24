@@ -1,5 +1,11 @@
+const userLang = navigator.language || navigator.userLanguage; 
 
 let data;
+
+fetch("../data/languages.json")
+    .then(response => response.json())
+    .then(json => data = json);
+
 
 const sectionTitles = document.querySelectorAll('h2')
 
@@ -14,16 +20,8 @@ const years = document.querySelectorAll('.item__year')
 const pt = document.querySelector('.portuguese')
 const en = document.querySelector('.english')
 
-
-
-
-fetch("../data/languages.json")
-    .then(response => response.json())
-    .then(json => data = json);
-
-
-pt.addEventListener('click', () => {
-
+const translatePortuguese = () => {
+    
     for (let i = 0; i < sectionTitles.length; i++) {
         sectionTitles[i].innerText = data.pt.sectionTitles[i]
     }
@@ -58,11 +56,12 @@ pt.addEventListener('click', () => {
             years[i].innerText = text
         }
     }
-})
 
-en.addEventListener('click', () => {
+    console.log('worked')
+}
 
-    for (let i = 0; i < sectionTitles.length; i++) {
+const translateEnglish = () => {
+        for (let i = 0; i < sectionTitles.length; i++) {
         sectionTitles[i].innerText = data.en.sectionTitles[i]
     }
 
@@ -96,4 +95,23 @@ en.addEventListener('click', () => {
             years[i].innerText = text
         }
     }
+}
+
+
+// Check if user chose BR
+window.addEventListener("load", (event) => {
+    if (userLang === 'pt-BR') {
+        translatePortuguese()
+    }
+  });
+
+
+pt.addEventListener('click', () => {
+    translatePortuguese()
+
 })
+
+en.addEventListener('click', () => {
+    translateEnglish()
+})
+
