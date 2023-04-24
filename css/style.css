@@ -296,17 +296,12 @@ a:visited {
     padding: 0.5rem 1rem;
     font-weight: 400;
     transition: all 0.3s ease-in;
+    opacity: 0;
+
 }
 
 .panel h3 {
-
-    opacity: 0;
     background-color: var(--blue);
-
-
-    /* position: relative;
-    top: 100%;
-    transform: translateY(-100%); */
 }
 
 .panel h3:hover {
@@ -331,10 +326,10 @@ a:visited {
 
 .panel.active h3 {
     opacity: 1;
-    transition: opacity 0.3s ease-in;
 }
 
 .panel.active a {
+    opacity: 1;
     position: absolute;
     left: 0%;
     z-index: 1;
@@ -443,6 +438,11 @@ a:visited {
 
      .projects {
         height: 60vh;
+    }
+
+    .panel.active {
+        flex: 1;
+        box-shadow: none;
     }
 /*
     .projects {
