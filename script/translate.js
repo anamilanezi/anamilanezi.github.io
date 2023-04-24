@@ -16,6 +16,7 @@ const details = document.querySelectorAll('.detailTranslate')
 const openProjects = document.querySelectorAll('.panel a')
 const projectsTitles = document.querySelectorAll('.panel__name')
 const years = document.querySelectorAll('.item__year')
+const resumeText = document.querySelector('.resume__title')
 
 const pt = document.querySelector('.portuguese')
 const en = document.querySelector('.english')
@@ -57,11 +58,12 @@ const translatePortuguese = () => {
         }
     }
 
-    console.log('worked')
+    resumeText.innerText = "Faça o download do meu CV!"
+
 }
 
 const translateEnglish = () => {
-        for (let i = 0; i < sectionTitles.length; i++) {
+    for (let i = 0; i < sectionTitles.length; i++) {
         sectionTitles[i].innerText = data.en.sectionTitles[i]
     }
 
@@ -95,6 +97,8 @@ const translateEnglish = () => {
             years[i].innerText = text
         }
     }
+    resumeText.innerText = "Download my Resume!"
+    
 }
 
 

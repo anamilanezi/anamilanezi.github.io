@@ -167,6 +167,7 @@ button:hover,
     font-size: 2rem;
     padding: 2rem;
     border-radius: 5rem 5rem 0 0;
+    text-align: center;
 }
 
 .resume__title:hover {
