@@ -2,7 +2,7 @@ const resume = document.querySelector('.resume__title')
 
 setTimeout(() => {
     resume.classList.remove('fa-fade')
-}, 5000)
+}, 2500)
 
 const panels = document.querySelectorAll('.panel')
 
@@ -10,34 +10,26 @@ panels.forEach((panel) => {
     panel.addEventListener('click', () => {
         removeActiveClasses();
         panel.classList.add('active');
-        // Check if it's second click and open page
-        Object.keys(panelInfo).forEach(info => {
-            secondClick(panel, info)
-        })
         }) 
+    panel.addEventListener('mouseover', () => {
+        removeActiveClasses();
+        panel.classList.add('active');
+        })
     })
 
 
-const secondClick = (panel, projectClass) => {
-    if (panel.classList.contains(projectClass)) {
-        if (panelInfo[projectClass].clicks >= 1) {
-            window.open(panelInfo[projectClass].page, '_blank');
-        } else {
-            panelInfo[projectClass].clicks++;
-        } 
-        
-    }
-}
 
-function removeActiveClasses() {
+const removeActiveClasses= () => {
     panels.forEach(panel => {
         panel.classList.remove('active')
     })
 }
 
+
 const panelUrl = (projectName) => {
     return `https://anamilanezi.github.io/front-end-mentor/${projectName}/index.html`
 }
+
 
 
 const panelInfo = {
@@ -67,3 +59,21 @@ const panelInfo = {
     },
 }
 
+
+const secondClick = (panel, projectClass) => {
+    if (panel.classList.contains(projectClass)) {
+        if (panelInfo[projectClass].clicks >= 1 && panel.classList.contains('active')) {
+            window.open(panelInfo[projectClass].page, '_blank');
+            resetClicks()
+        } else {
+            panelInfo[projectClass].clicks++;
+        } 
+
+    }
+}
+
+const resetClicks = () => {
+    Object.keys(panelInfo).forEach(info => {
+        panelInfo[info].clicks = 0;
+    })
+}
