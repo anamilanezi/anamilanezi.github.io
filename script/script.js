@@ -1,12 +1,33 @@
+const resume = document.querySelector('.resume__title')
+
+setTimeout(() => {
+    resume.classList.remove('fa-fade')
+}, 5000)
+
 const panels = document.querySelectorAll('.panel')
 
 panels.forEach((panel) => {
     panel.addEventListener('click', () => {
         removeActiveClasses();
         panel.classList.add('active');
-        console.log('clicked')
+        // Check if it's second click and open page
+        Object.keys(panelInfo).forEach(info => {
+            secondClick(panel, info)
+        })
+        }) 
     })
-});
+
+
+const secondClick = (panel, projectClass) => {
+    if (panel.classList.contains(projectClass)) {
+        if (panelInfo[projectClass].clicks >= 1) {
+            window.open(panelInfo[projectClass].page, '_blank');
+        } else {
+            panelInfo[projectClass].clicks++;
+        } 
+        
+    }
+}
 
 function removeActiveClasses() {
     panels.forEach(panel => {
@@ -14,66 +35,35 @@ function removeActiveClasses() {
     })
 }
 
-const resume = document.querySelector('.resume__title')
-
-resume.addEventListener('mouseover', () => {
-    resume.classList.remove('fa-fade')
-})
-
 const panelUrl = (projectName) => {
     return `https://anamilanezi.github.io/front-end-mentor/${projectName}/index.html`
 }
 
 
-// const clicks = {
-//     card: 0,
-//     tip: 0,
-//     faq: 0,
-//     rating: 0,
-//     capstone: 0,
-//     pomodoge: 0,
+const panelInfo = {
+    card: {
+        clicks: 0,
+        page  : panelUrl('interactive-card-details')
+    },
+    tip: {
+        clicks: 0,
+        page  : panelUrl('tip-calculator-app')
+    },
+    faq: {
+        clicks: 0,
+        page  : panelUrl('faq-accordion')
+    },
+    rating: {
+        clicks: 0,
+        page  : panelUrl('interactive-rating')
+    },
+    capstone: {
+        clicks: 0,
+        page  : 'https://www.kaggle.com/code/anamilanezi/google-capstone-creating-maps'
+    },
+    pomodoge: {
+        clicks: 0,
+        page  : 'https://github.com/anamilanezi/pomodoge-timer/blob/main/en-us/pomodoge.py'
+    },
+}
 
-// }
-// const projectCard = document.querySelector('.panel.card')
-
-
-// const openProject = (clickedPanel, projectClassName, projectLink) => {
-//     clickedPanel.addEventListener('click', (e) => {
-//         e.stopPropagation()
-//         if (clicks[projectClassName] >= 2 ) {
-//             if (clickedPanel.classList.contains(projectClassName)) {
-//                 window.open(panelUrl(projectLink))
-//             }
-//         }
-//     })
-//     console.log(clicks)
-//     clicks[projectClassName] = 1;
-// }
-
-
-
-
-
-// openProject(projectCard, 'card', 'interactive-card-details') 
-
-
-// projectCard.addEventListener('click', () => {
-//     if (cardClick >= 1) {
-//         if (projectCard.classList.contains('card')) {
-//             console.log(projectCard.classList.contains('card'))
-//             window.open(panelUrl('interactive-card-details'), '_blank');
-//         }
-//     } 
-//     cardClick++;
-// })
-
-
-// projectTip.addEventListener('click', () => {
-//     if (clicks.tip >= 1) {
-//         if (projectCard.classList.contains('card')) {
-//             console.log(projectCard.classList.contains('card'))
-//             window.open(panelUrl('interactive-card-details'), '_blank');
-//         }
-//     } 
-//     clicks.tip++;
-// })
