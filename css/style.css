@@ -100,7 +100,6 @@ a:visited {
 }
 
 
-button, 
 .contact-link:link,
 .contact-link:visited {
     background-color: var(--primary);
@@ -120,6 +119,12 @@ button {
     font-weight: 800;
     border: none;
     cursor: pointer;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+
 }
 
 button:hover, 
