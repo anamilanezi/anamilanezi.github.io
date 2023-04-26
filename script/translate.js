@@ -23,12 +23,12 @@ const en = document.querySelector('.english')
 
 
 // Check if user chose BR
-window.addEventListener("load", (event) => {
-    if (userLang === 'pt-BR') {
-        translate('pt')
+// window.addEventListener("load", () => {
+//     if (userLang === 'pt-BR') {
+//         translate('pt')
 
-    }
-  });
+//     }
+//   });
 
 
 pt.addEventListener('click', () => {
