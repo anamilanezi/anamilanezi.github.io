@@ -1,10 +1,10 @@
-const userLang = navigator.language || navigator.userLanguage; 
+const userLang = navigator.language || navigator.userLanguage;
 
 const data = {
     "pt": {
 
         "sectionTitles": [
-            "Sobre mim", 
+            "Sobre mim",
             "Licenças & Certificações",
             "Experiência Profissional",
             "Formação Acadêmica",
@@ -20,8 +20,8 @@ const data = {
             "Introdução às principais habilidades e ferramentas analíticas (planilhas, SQL, bancos de dados, linguagens de programação e visualização)",
             "Técnicas avançadas e modernas de CSS, arquitetura de CSS, Sass, layouts com Flexbox e CSS Grid, fluxo de design responsivo e mais.",
             "Fundamentos de Node.js, Express, API RESTful, Mongoose, modelagem de dados, segurança, tratamento de erros, implantação e mais.",
-"Coleta e tratamento de dados através de scripts em Python utilizando as bibliotecas pandas, requests, BeautifulSoup, Selenium, dentre outras",
-"Atendimento ao cliente, venda e gestão de viagens atendendo a grandes empresas, prospecção de novos clientes."
+            "Coleta e tratamento de dados através de scripts em Python utilizando as bibliotecas pandas, requests, BeautifulSoup, Selenium, dentre outras",
+            "Atendimento ao cliente, venda e gestão de viagens atendendo a grandes empresas, prospecção de novos clientes."
 
 
         ],
@@ -45,17 +45,18 @@ const data = {
             "Google Capstone",
             "Pomodoge Timer"
         ],
-        
+
         "university": "Universidade Federal do Rio Grande do Sul",
-        "details"    : [ 
+        "details": [
             "Criatividade :)",
             "Português nativo",
             "Inglês fluente"
         ],
         "openProjects": "Clique aqui para abrir",
-        "year": "Atual"
+        "year": "Atual",
+        "resumeDownload": "/data/AnaM-CV-Portugues.pdf"
 
-        
+
     },
     "en": {
 
@@ -74,15 +75,15 @@ const data = {
             // "I'm a curious and creative person that has always been fascinated by the power of technology. My background as a Biology graduate gave me perspective and tools to problem-solving that are valuable in the tech industry and helped me a lot in my ongoing journey to become a <u>pro</u>grammer. Now I'm looking for opportunities where I can contribute, apply my knowledge and to grow even more on the career.",
 
             "HTML5, CSS3, JavaScript and Responsive Design",
-            
+
             "Introduction to key analytical skills and tools (spreadsheets, SQL, programming languages, Tableau).",
-            
+
             "Modern and advanced CSS properties and techniques, CSS architecture, Flexbox, CSS Grid layouts, responsive design workflows",
-            
+
             "Fundamentals of Node.js, Express, RESTful API, Mongoose, data modelling, security, error handling workflows, deployment, and more.",
-            
+
             "Data collection and treatment using Python libraries (requests, pandas, BeautifulSoup, Selenium, among others libraries).",
-            
+
             "Custumer service, sales and management of corporate travels."
         ],
 
@@ -105,17 +106,19 @@ const data = {
             "Google Capstone",
             "Pomodoge Timer"
         ],
-        
+
         "university": "Federal University of Rio Grande do Sul",
-        "details"    : [ 
+        "details": [
             "Creativity :)",
             "Native in Portuguese",
             "Fluent in English"
         ],
         "openProjects": "Click here to open",
-        "year": "Present"
+        "year": "Present",
+        "resumeDownload": "/data/AnaM-CV-English.pdf"
 
-        
+
+
     }
 }
 
@@ -134,6 +137,7 @@ const sectionTitles = document.querySelectorAll('h2')
 const listedTitles = document.querySelectorAll('.item__title')
 const descriptions = document.querySelectorAll('p')
 const university = document.querySelectorAll('.university')
+const resumeURL = document.querySelector('.resume__title')
 const details = document.querySelectorAll('.detailTranslate')
 const openProjects = document.querySelectorAll('.panel a')
 const projectsTitles = document.querySelectorAll('.panel__name')
@@ -149,7 +153,7 @@ window.addEventListener("load", () => {
     if (userLang === 'pt-BR') {
         translate('pt')
     }
-  });
+});
 
 
 pt.addEventListener('click', () => {
@@ -161,9 +165,13 @@ en.addEventListener('click', () => {
 })
 
 
+
+
 const translate = (lang) => {
     const chosenLang = data[lang]
+    // TODO: Create a array of properties and call function to each of them 
 
+    
     for (let i = 0; i < sectionTitles.length; i++) {
         sectionTitles[i].innerText = chosenLang.sectionTitles[i]
     }
@@ -191,7 +199,8 @@ const translate = (lang) => {
     for (let i = 0; i < openProjects.length; i++) {
         openProjects[i].innerText = chosenLang.openProjects
     }
-    
+
+    resumeURL.href = chosenLang.resumeDownload
 
 
     if (lang === "pt") {
@@ -211,5 +220,5 @@ const translate = (lang) => {
             }
         }
     }
-    
+
 }

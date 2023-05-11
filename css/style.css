@@ -39,6 +39,7 @@ body {
     background-color: var(--primary);    
 }
 
+
 h1 {
     font-size: 4rem;
 }
@@ -59,6 +60,13 @@ a:visited {
 .skills,
 .languages {
     margin-bottom: 3rem;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 /* HEADER  */
 
@@ -276,6 +284,13 @@ button:hover,
 
 .skills .details__item {
     background-color: var(--primary-light);
+    transition: all 0.8s ease-in-out;
+
+}
+
+.skills .details__item:hover {
+    cursor: crosshair;
+    background-color: hsla(150, 63%, 53%, 0.1);
 }
 
 .languages .details__item {

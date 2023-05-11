@@ -1,3 +1,5 @@
+document.body.classList.remove('preload')
+
 const resume = document.querySelector('.resume__title')
 
 setTimeout(() => {
