@@ -51,7 +51,6 @@ h2 {
 a:link,
 a:visited {
     text-decoration: none;
-    color: var(--gray);
 }
 
 .about, 
@@ -223,6 +222,15 @@ button:hover,
     text-transform: uppercase;
 }
 
+.item__sub a:link,
+.item__sub a:visited {
+    color: var(--primary);
+}
+
+.item__sub a:hover {
+    color: var(--gray);
+    background-color: var(--primary);
+}
 
 .item__year {
     display: flex;
@@ -325,6 +333,8 @@ button:hover,
 
 .panel a {
     text-transform: uppercase;
+    color: var(--gray);
+
     background-color: var(--primary-light);
     position: absolute;
     bottom: 0;
