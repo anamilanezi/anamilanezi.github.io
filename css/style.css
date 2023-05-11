@@ -172,6 +172,8 @@ button:hover,
     padding: 2rem;
     border-radius: 5rem 5rem 0 0;
     text-align: center;
+    color: var(--gray);
+
 }
 
 .resume__title:hover {
@@ -444,10 +446,9 @@ button:hover,
 
     .resume__title {
         border-radius: 5rem;
-
-
     }
 
+ 
     .resume__img {
         display: none;
 
